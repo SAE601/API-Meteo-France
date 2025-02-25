@@ -16,7 +16,9 @@ Ce projet est une page web permettant d'afficher la météo actuelle d'une ville
    ```html
     <!-- Div où les données seront chargées -->
     <div id="api-meteo-div">
-      [...]
+      <p>
+        Ville: <span id="meteo-city"></span> - Température: <span id="meteo-temperature"></span>°C - Humidité: <span id="meteo-humidity"></span>% - Conditions: <span id="meteo-description"></span>
+      </p>
     </div>
 
     <!-- Inclusion du fichier JavaScript externe -->
@@ -27,7 +29,7 @@ Ce projet est une page web permettant d'afficher la météo actuelle d'une ville
 
 Le script est configuré pour récupérer la météo à l'ouverture de la page. Toutefois, il est possible d'ajouter un event qui appelle `getWeather()` pour mettre à jour l'affichage.
 
-La modification de l'affichage se fait directement en modifier le script. En effet, il remplace le contenu de la `div` avec l'id `message`.
+
 
 
 

@@ -13,14 +13,17 @@ async function getWeather() {
 }
 
 function displayWeather(data) {
-    const messagesDiv = document.getElementById('api-meteo-div');
-    messagesDiv.innerHTML = "";
+    const mTemp = document.getElementById('meteo-temperature');
+    mTemp.innerHTML = data.main.temp;
 
-    const messageElement = document.createElement('div');
-    messageElement.classList.add('message');
-    messageElement.textContent = `Ville: ${data.name} - Température: ${data.main.temp}°C - Humidité: ${data.main.humidity}% - Conditions: ${data.weather[0].description}`;
+    const mHum = document.getElementById('meteo-humidity');
+    mHum.innerHTML = data.main.humidity;
 
-    messagesDiv.appendChild(messageElement);
+    const mCity = document.getElementById('meteo-city');
+    mCity.innerHTML = data.name;
+
+    const mDesc = document.getElementById('meteo-description');
+    mDesc.innerHTML = data.weather[0].description;
 }
 
 // Appel de la fonction pour récupérer les données
