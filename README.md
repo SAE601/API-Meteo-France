@@ -11,15 +11,23 @@ Ce projet est une page web permettant d'afficher la météo actuelle d'une ville
 - `script.js` : Le fichier contenant la logique JavaScript pour récupérer et afficher les données.
 
 ## Utilisation
-1. **Assurez-vous que le fichier `script.js` est bien inclus dans `index.html`** :
+1. **Assurez-vous que le fichier `script.js` est bien inclus dans le HTML** :
 
    ```html
-   <!-- Inclusion du fichier JavaScript externe -->
-   <script src="script.js"></script>
+    <!-- Div où les données seront chargées -->
+    <div id="messages">
+      [...]
+    </div>
+
+    <!-- Inclusion du fichier JavaScript externe -->
+    <script src="script.js"></script>
    ```
 
-2. **Ouvrez le fichier `index.html` dans un navigateur**.
-3. **Cliquez sur le bouton "Obtenir la météo"** pour voir les données de la ville configurée.
+2. **Ouvrez le fichier HTML dans un navigateur**.
+
+Le script est configuré pour récupérer la météo à l'ouverture de la page. Toutefois, il est possible d'ajouter un event qui appelle `getWeather()` pour mettre à jour l'affichage.
+
+La modification de l'affichage se fait directement en modifier le script. En effet, il remplace le contenu de la `div` avec l'id `message`.
 
 
 
@@ -31,7 +39,4 @@ Ce projet est une page web permettant d'afficher la météo actuelle d'une ville
   ```
 
 - Remplacez `cf8b56bcf8ecb228cc4abae0346663be` par votre propre clé API OpenWeatherMap. ou gardez la mienne.
-
-## Licence
-Ce projet est libre d'utilisation et de modification.
 
