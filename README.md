@@ -8,7 +8,6 @@ Ce projet est une page web permettant d'afficher la météo actuelle d'une ville
 2. **Assurez-vous d'avoir une connexion Internet** pour récupérer les données météo.
 
 ## Structure du Projet
-- `index.html` : La page principale qui affiche la météo.
 - `script.js` : Le fichier contenant la logique JavaScript pour récupérer et afficher les données.
 
 ## Utilisation
