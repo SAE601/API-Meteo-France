@@ -13,7 +13,7 @@ async function getWeather() {
 }
 
 function displayWeather(data) {
-    const messagesDiv = document.getElementById('messages');
+    const messagesDiv = document.getElementById('api-meteo-div');
     messagesDiv.innerHTML = "";
 
     const messageElement = document.createElement('div');
