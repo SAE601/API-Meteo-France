@@ -94,3 +94,5 @@ Sortie JSON de l'API :
     "cod": 200
   }
 ```
+
+[https://openweathermap.org/weather-conditions](https://openweathermap.org/weather-conditions)
