@@ -15,7 +15,7 @@ Ce projet est une page web permettant d'afficher la météo actuelle d'une ville
 
    ```html
     <!-- Div où les données seront chargées -->
-    <div id="messages">
+    <div id="api-meteo-div">
       [...]
     </div>
 
