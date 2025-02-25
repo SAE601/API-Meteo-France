@@ -42,3 +42,55 @@ Le script est configuré pour récupérer la météo à l'ouverture de la page. 
 
 - Remplacez `cf8b56bcf8ecb228cc4abae0346663be` par votre propre clé API OpenWeatherMap. ou gardez la mienne.
 
+Sortie JSON de l'API :
+```json
+  {
+    "coord":
+    {
+      "lon":6.0075,
+      "lat":43.1228
+    },
+    "weather": [
+      {
+        "id":500,
+        "main": "Rain",
+        "description": "légère pluie",
+        "icon": "10d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 13.74,
+      "feels_like": 13.52,
+      "temp_min": 13.37,
+      "temp_max": 15.91,
+      "pressure": 1017,
+      "humidity": 90,
+      "sea_level": 1017,
+      "grnd_level": 996
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 1.03,
+      "deg":0
+    },
+    "rain": {
+      "1h": 0.41
+    },
+    "clouds": {
+      "all":75
+    },
+    "dt": 1740490604,
+    "sys": {
+      "type": 2,
+      "id": 2005831,
+      "country": "FR",
+      "sunrise": 1740464327,
+      "sunset": 1740503977
+    },
+    "timezone": 3600,
+    "id": 3009223,
+    "name": "La Garde",
+    "cod": 200
+  }
+```
