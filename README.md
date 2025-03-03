@@ -45,61 +45,49 @@ Le script est configuré pour récupérer la météo à l'ouverture de la page. 
 ## Type de Variable et Personalisation de vos requettes  
 data.name (Nom de la ville)
 Type : string
-
 Description : Le nom de la ville pour laquelle les données météo sont retournées.
-
 Personnalisable : Oui, en changeant la valeur de city dans l'URL.
+
+
 
 2. data.main.temp (Température)
 Type : float
-
 Description : La température actuelle en degrés Celsius (ou Fahrenheit, selon les unités spécifiées dans l'URL).
-
 Personnalisable : Oui, en utilisant le paramètre units=metric (Celsius) ou units=imperial (Fahrenheit).
+
 
 3. data.main.humidity (Humidité)
 Type : int
-
 Description : Le taux d'humidité en pourcentage.
 
 
 4. data.weather[0].description (Conditions météorologiques)
-Type : string
-
+Type : strig
 Description : Une description textuelle des conditions météorologiques (par exemple, "ciel dégagé", "pluie légère").
-
 Personnalisable : Oui, en changeant la langue via le paramètre lang=fr (français) ou d'autres langues supportées.
+
 
 5. data.wind.speed (Vitesse du vent)
 Type : float
-
 Description : La vitesse du vent en mètres par seconde (m/s).
 
 
 
 6. Autres champs utiles :
 data.main.feels_like (Température ressentie) :
-
 Type : float
-
 Description : La température ressentie en degrés Celsius (ou Fahrenheit).
 
 data.wind.deg (Direction du vent) :
-
 Type : int
-
 Description : La direction du vent en degrés (0 = Nord, 90 = Est, 180 = Sud, 270 = Ouest).
 
 data.clouds.all (Couverture nuageuse) :
-
 Type : int
-
 Description : Le pourcentage de couverture nuageuse.
 
 data.sys.sunrise et data.sys.sunset (Lever et coucher du soleil) :
-
 Type : int
-
 Description : Les heures de lever et coucher du soleil en timestamp Unix.
 
 Sortie JSON de l'API :
